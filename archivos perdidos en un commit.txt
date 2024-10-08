@@ -1,0 +1,28 @@
+//en caso de que se borren los archivos en un commit
+git log --pretty=oneline
+//muestra los commit hechos al repositorio y el ultimo commit efectuado
+
+//en caso de que no aparezca el commit efectuado se usa el siguiente comando
+git reflog
+
+//para mas detalles se usa el comando
+git log -g
+// este muestra detalladamente, el autor y la fecha del commit, dentro de esta lista se busca el commit que contiene los datos y se apunta su ID de commit
+
+//con el siguiente comando se mueve el commit, como si fuera el ultimo hecho 
+git log branch recovery-branch (ID commit)
+
+//te mueves a la rama a la que estabas haciendo el commit con el comando.
+git checkout (nombre de la rama)
+
+//el siguiente comando verfica el estado de la rama y los archivos que fueron puestos en commit 
+git status && git ls-file -s
+// mostrara una lista con todos los archivos en commit, incluso aquellos borrados
+
+
+//con un git log podemos verificar que estemos en el comando de recovery-branch mencionado anteriormente, si esa asi solo resta hacer push 
+git push origin (nombre de la rama)
+
+
+hacer un video y Tambien de UTM
+cambio para update
