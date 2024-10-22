@@ -21,7 +21,7 @@ class Animal {
     }
   }
   
-  const perro1 = new Perro("Bobby", "Perro", "Pug");
+  const perro1 = new Perro("Bobby", "Perro", "Labrador");
   
   console.log(perro1);
   perro1.correr();

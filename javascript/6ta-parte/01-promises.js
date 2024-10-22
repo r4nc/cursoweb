@@ -18,7 +18,7 @@
 
 const promise = new Promise((resolve, reject) =>{
     setTimeout(() => {
-        let operationSuccessfull = true;
+        let operationSuccessfull = false;
         if(operationSuccessfull){
             resolve("La operacion fue exitosa")
         } else {
