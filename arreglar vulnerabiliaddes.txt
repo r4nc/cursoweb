@@ -1,0 +1,48 @@
+/Pasos 📌
+ 
+
+• En la terminal estar dentro de la carpeta del proyecto react-base, ejecutar:
+
+npm audit
+ 
+
+• Si se quiere ver el informe a un nivel mas detallado, tipo objeto, se ejecuta:
+
+npm audit --json
+ 
+
+• Si aún siguen apareciendo vulnerabilidades, se ejecuta:
+
+npm audit fix
+ 
+
+• Si aún siguen apareciendo vulnerabilidades, se ejecuta:
+
+npm audit fix --force
+ 
+
+• Si aún sigue apareciendo vulnerabilidades, se puede tratar de actualizar los paquetes a los que se refieren las advertencias, por ejemplo con web-pack, se busca cuáles paquetes se van actualizar, se listan los paquetes con:
+
+npm list
+ 
+
+• Aparece para web-pack:
+
+├── webpack-cli@4.7.2
+├── webpack-dev-server@3.11.3
+└── webpack@5.83.1
+ 
+
+• Se instala c/u a la última versión, de ésta forma:
+
+npm install webpack-cli@latest
+npm install webpack-dev-server@latest
+npm install webpack@latest
+ 
+
+• Se vuelve a ejecutar: npm list y npm audit
+
+• No deben salir conflictos:
+
+
+found 0 vulnerabilities
